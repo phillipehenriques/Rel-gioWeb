@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
     background-color: blueviolet;
     font: normal 15pt Arial;
@@ -13,10 +18,10 @@ header {
 }
 
 section {
-    background-color: white;
-    border-radius: 12px;
-    padding: 15px;
-    width: min-content;
+    background-color: none;
+    border-radius: 0;
+    padding: 0;
+
     margin: auto;
     color: black;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
@@ -33,5 +38,35 @@ footer {
 
 div {
     text-align: center;
-    padding: 12px;
 }
+
+img {
+    width: 100vw
+    position: relative;
+}
+
+
+
+.Dia {
+    background-image: url("imagens/dia.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .Tarde {
+    background-image: url("imagens/tarde.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .Noite {
+    background-image: url("imagens/noite.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  .Madrugada {
+    background-image: url("imagens/madrugada.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }

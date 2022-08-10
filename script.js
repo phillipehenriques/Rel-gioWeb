@@ -4,22 +4,52 @@ function carregar() {
     var data = new Date()
     var hora = data.getHours()
     
+    let bomdia = document.querySelector("body");
+    let boatarde = document.querySelector("body");
+    let boanoite = document.querySelector("body");
+    let boamadrugada = document.querySelector("body");
+
     msg.innerHTML = `Agora são ${hora} horas`
+
     if (hora >= 0 && hora < 6) {
             // Bom madrugada!
-        img.src = 'imagens/madrugada.jpg'
-        document.body.style.background = '2b2b2b'
+        img.src = ''
+        boamadrugada.url = "imagens/madrugada.png";
     } else if (hora >= 6 && hora < 12) {
             // Bom dia!
-        img.src = 'imagens/dia.jpg'
-        document.body.style.background = '#e2cd9f'       
+        img.src = ''
+        bomdia.url = "imagens/dia.png";     
     } else if (hora >= 12 && hora < 18) {
             // Bom tarde! 
-        img.src = 'imagens/tarde.jpg'
-        document.body.style.background = '#b9846f'           
+        img.src = ''
+        boatarde.url = "imagens/tarde.png";
     } else {
             // Bom noite! 
-        img.src = 'imagens/noite.jpg'
-        document.body.style.background = '#000000'           
+        img.src = ''
+        boanoite.url = "imagens/noite.png";           
     }
 }
+
+/* 
+
+boamadrugada.url = "imagens/madrugada.png";
+
+if (hora >= 0 && hora < 6) {
+    // Bom madrugada!
+img.src = ''
+document.body.style.backgroundImage = 'imagens/madrugada.png';
+} else if (hora >= 6 && hora < 12) {
+    // Bom dia!
+img.src = '
+document.body.style.backgroundImage = 'imagens/dia.png';     
+} else if (hora >= 12 && hora < 18) {
+    // Bom tarde! 
+img.src = ''
+} else {
+    // Bom noite! 
+img.src = ''
+document.body.style.backgroundAttachment = 'black';           
+}
+}
+
+*/
