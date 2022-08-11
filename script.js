@@ -23,6 +23,7 @@ function carregar() {
     } else {
             // Bom noite! 
         img.src = 'imagens/noite.png'
+        // document.body.style.backgroundColor = 'white';
                    
     }
 }
